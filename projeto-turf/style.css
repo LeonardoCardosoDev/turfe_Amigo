@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+body{
+    overflow-x: hidden;
+    background-color: #E9E9F0;
+}
+header{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav {
+    width: 85vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 47px;
+}
+nav h1 span{
+    color: #CC583E;
+}
+nav div{
+    width: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav div img{
+    width: auto;
+    height: 60%;
+}
+
+section{
+    width: 100vw;
+    height: 80vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cont-title{
+    width: 26vw;
+    height: 58vh;
+    border-radius: 46px;
+    background-color: #EB996E;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+input[type=text] {
+    outline: none
+}
+
+.cont-title input{
+    width: 20vw;
+    height: 5vh;
+    padding: 10px;
+    background: #FFFFFF;
+        border-radius: 15px;
+        border: none;
+        font-family: 'Roboto';
+        font-style: normal;
+            font-weight: 700;
+            font-size: 0.9vw;
+            line-height: 47px;
+}
+.cont-title h2{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2vw;
+        line-height: 47px;
+        color: #FFFFFF;
+    margin-bottom: 60px;
+}
+.cont-img {
+    width: 26vw;
+    height: 68vh;
+}
+.cont-img img {
+    width: auto;
+    height: 68vh;
+}
+.button{
+    width: 10vw;
+    height: 5vh;
+    margin-top: 50px;
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8.09px;
+
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1vw;
+        line-height: 47px;
+        color: #FFFFFF;
+}
+.cont-t{
+    overflow: auto;
+}
+.button:hover{
+    background-color: #FFFFFF;
+    color: #EB996E;
+    transition: 0.5s;
+}
+/*Modal*/
+.modal {
+
+    width: 50vw;
+    height: 60vh;
+    background-color: #EB996E;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation: animate;
+    animation-duration: 800ms;
+    border: solid 2px #EB996E;
+    border-radius: 8px;
+
+}
+
+.containerModal {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.containerModal .contatoArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+  
+
+}
+.title-modal{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2vw;
+        line-height: 47px;
+        color: #FFFFFF;
+        margin-bottom: 60px;
+}
+.input-modal{
+    width: 20vw;
+        height: 5vh;
+        padding: 10px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        border: none;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.9vw;
+        line-height: 47px;
+}
+
+@keyframes animate {
+
+    from {
+        opacity: 1;
+    }
+
+    from {
+        opacity: 0;
+    }
+}
+
+
+.fechar {
+
+    width: auto;
+    height: 10vh;
+    float: right;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.fechar img {
+    width: auto;
+    height: 2.5vh;
+}
+
+ .title-resultado{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+}
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>TurfeAmigo.</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Turfe<span>Amigo</span>.</h1>
+      <div><img src="assets/icone_horse.svg" alt="" /></div>
+    </nav>
+  </header>
+  <section>
+    <div class="cont" id="caixaQuantidade">
+      <div class="cont-title">
+        <h2>Informe a quantidade de cavalos para a corrida</h2>
+        <input type="text" id="ipt_qtdCavalos" />
+        <div class="button" onclick="CadastrarQuantidade()">
+          <h3>confirmar</h3>
+        </div>
+      </div>
+      <div class="cont-img">
+        <img src="assets/horse_page1.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="modal" id="caixaNomeCavalos">
+      <div onclick="fechar()" class="fechar">
+        <img src="assets/icon_cancelar.svg" alt="" />
+      </div>
+      <div class="containerModal">
+        <div class="contatoArea">
+          <h2 class="title-modal">
+            Informe o nome dos cavalos participando da corrida
+          </h2>
+          <input type="text" id="nomeCavalo" class="input-modal" />
+          <div class="button" onclick="CadastrarCavalo()">
+            <h3>Registrar</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="caixaVoltas">
+      <div onclick="fechar()" class="fechar">
+        <img src="assets/icon_cancelar.svg" alt="" />
+      </div>
+      <div class="containerModal cont-t">
+        <div class="contatoArea" id="contVolta">
+          <h2 class="title-modal">Informe a quantidade de voltas</h2>
+          <input type="text" id="ipt_qtdVoltas" class="input-modal" />
+          <div class="button" onclick="Funcaovoltas()">
+            <h3>Registrar voltas</h3>
+          </div>
+          
+        </div>
+        <div class="contatoArea" id="largada">
+          <h2 class="title-modal" style="text-align: center;">Corrida</h2>
+          <div id="largabutton" class="button" onclick="DarLargada()"> 
+            <h3>DarLargada</h3>
+          </div>
+          <div id="resultado" class="title-resultado"></div>
+          <div  class="button" onclick="ranking()" id="buttonranking" style="display: none;">
+            <h3>Ranking</h3>
+          </div>
+          <div id="resultado2" class="title-resultado title-rank" style="display: none;"></div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
+<script src="index.js"></script>
